@@ -124,4 +124,13 @@ main{
   padding: 5px;
   border-radius: 15px;
 }
+@media (min-width:600px) {
+  .list{
+    justify-content: space-around;
+  }
+  .search-bar{
+    width: 550px;
+  }
+}
+
 
