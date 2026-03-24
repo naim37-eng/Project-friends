@@ -27,6 +27,7 @@ header{
  flex-direction:row;
  gap: 40px;
  width: 100%;
+ justify-content: center;
 }
 .list span a{
   text-decoration:none;
@@ -130,7 +131,7 @@ main{
     justify-content: space-around;
   }
   .search-bar{
-    width: 550px;
+    width: 650px;
   }
 }
 
