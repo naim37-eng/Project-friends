@@ -26,6 +26,7 @@ header{
  display: flex; 
  flex-direction:row;
  gap: 40px;
+ width: 100%;
 }
 .list span a{
   text-decoration:none;
