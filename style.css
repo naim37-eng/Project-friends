@@ -16,7 +16,14 @@ header{
   line-height: 25px;
   line-height: 30px;
   height: 70px;
+  z-index: 100;
   
+}
+header p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .list{
   display: inline-block;
@@ -29,27 +36,46 @@ header{
 .list span a{
   text-decoration:none;
   color: white;
+  transition: all 0.5s ease;
 } 
+.list span a:focus{
+  transform: translateZ(10px);
+  border-bottom:1px solid white;
+
+}
 .search-bar{
   width:270px;
   height: 25px;
   padding-left: 10px;
   border-radius: 10px;
   border:none;
+
 }
+  .search-bar:focus{
+    outline: none;
+  }
 .button{
   background-color: #2563EB;
   border:none;
   border-radius: 10px;
   height: 25px;
   width:60px;
+  cursor: pointer;
+  transition:all 0.3s ease-in-out;
+}
+
+
+
+.button:focus{
+  background-color: #FF4FC4;
+  color: white;
 }
 
 main{
   padding-top: 80px;
   display: flex;
   flex-direction: column;
-  background-color: #962F2F;
+  background-color: #CECECE;
   min-height:100vh;
 
   
@@ -86,15 +112,24 @@ main{
   ;
   margin:20px;
   padding: 5px;
-  
+  transition: all 0.4s ease-in-out;
+
   
   
 }
+
+  .id-desine:hover{
+transform: translateY(10px);
+background-color: #FFE6D1;
+  }
+  
+  
+  
 .info-title{
   width: 100%;
   height:50px;
   text-align: center;
-  background-color: #454C97;
+  background-color: #3DA6F0;
    margin:20px ;
    display: flex;
    justify-content: center;
@@ -146,22 +181,35 @@ main{
   text-align: center;
   padding: 5px;
   border-radius: 15px;
+  translate: all 0.3s ease-in-out;
+}
+.id-desine a:hover{
+  background-color: #F6A730;
 }
 
 .footer{
-  background-color: black;
+  background-color: #4C4C4C;
   color: white;
   width: 100%;
+  height:150px;
   display :flex;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
 .overview{
-  background-color: #4A57E2;
+  background-color: #3B94DF;
   width:100%;
-  height:100%;
+  height:250px;
   text-wrap: wrap;
   overflow: scroll;
   padding: 20px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  
+  
 }
 
 
@@ -176,9 +224,14 @@ main{
     grid-template-columns:30vw 70vw;
   }
   
+  .overview{
+    font-size: 3rem;
+    height:100%;
+  }
   
-  
-  
+  .search-bar{
+    width: 50%;
+  }
   
 }
   
